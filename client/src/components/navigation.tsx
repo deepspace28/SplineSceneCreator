@@ -1,6 +1,6 @@
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
-import { SiOpenai } from "react-icons/si";
+import { Cpu } from "lucide-react";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
@@ -13,7 +13,7 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <SiOpenai className="w-8 h-8 text-primary" />
+            <Cpu className="w-8 h-8 text-primary" />
             <span className="text-2xl font-bold text-neutral-50">SmartBotX</span>
           </Link>
 
@@ -29,13 +29,13 @@ export default function Navigation() {
               Home
             </Link>
             <Link 
-              href="/service/chatbots" 
+              href="/service/customer-engagement" 
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary",
                 location.startsWith("/service") ? "text-primary" : "text-neutral-400"
               )}
             >
-              Services
+              Solutions
             </Link>
             <Link 
               href="/contact"
@@ -67,13 +67,13 @@ export default function Navigation() {
                   Home
                 </Link>
                 <Link 
-                  href="/service/chatbots" 
+                  href="/service/customer-engagement" 
                   className={cn(
                     "text-lg font-medium transition-colors hover:text-primary",
                     location.startsWith("/service") ? "text-primary" : "text-neutral-400"
                   )}
                 >
-                  Services
+                  Solutions
                 </Link>
                 <Link 
                   href="/contact"
