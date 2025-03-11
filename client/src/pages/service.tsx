@@ -55,7 +55,7 @@ export default function Service() {
 
   return (
     <div className="pt-24">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-7xl">
         {/* Service Navigation */}
         <div className="flex flex-wrap gap-4 mb-12 overflow-x-auto pb-4">
           {Object.entries(services).map(([key, value]) => (
@@ -90,7 +90,7 @@ export default function Service() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
             {service.content.map((paragraph, index) => (
-              <p key={index} className="text-lg text-neutral-300">
+              <p key={index} className="text-lg text-neutral-300 leading-relaxed">
                 {paragraph}
               </p>
             ))}
