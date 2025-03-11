@@ -1,8 +1,9 @@
-import { useParams } from "wouter";
+import { useParams, Link } from "wouter";
 import { GlareCard } from "@/components/ui/glare-card";
 import { ServiceDemo } from "@/components/ui/service-demo";
 import ContactForm from "@/components/contact-form";
-import { Bot, Target, Sparkles } from "lucide-react";
+import { Bot, Target, Sparkles, ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const services = {
   "customer-engagement": {
@@ -55,6 +56,23 @@ export default function Service() {
   return (
     <div className="pt-24">
       <div className="container mx-auto px-4">
+        {/* Service Navigation */}
+        <div className="flex flex-wrap gap-4 mb-12 overflow-x-auto pb-4">
+          {Object.entries(services).map(([key, value]) => (
+            <Link key={key} href={`/service/${key}`}>
+              <GlareCard className={cn(
+                "flex items-center gap-3 p-4 cursor-pointer transition-all hover:scale-105",
+                key === id ? "border-primary" : "border-neutral-800"
+              )}>
+                {value.icon && <value.icon className="w-5 h-5 text-primary" />}
+                <span className="text-sm font-medium text-neutral-50">{value.title}</span>
+                {key === id && <ArrowRight className="w-4 h-4 text-primary" />}
+              </GlareCard>
+            </Link>
+          ))}
+        </div>
+
+        {/* Service Header */}
         <div className="flex items-center gap-4 mb-8">
           {Icon && <Icon className="w-10 h-10 text-primary" />}
           <h1 className="text-4xl font-bold text-neutral-50">{service.title}</h1>
