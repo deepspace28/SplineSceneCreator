@@ -1,0 +1,31 @@
+1. Home Page:
+
+Header: SmartBotX logo and navigation menu (Home, Features, Services, Contact).
+Hero Section:
+Use a dynamic 3D graphic of a chatbot interacting with a user.
+Headline: "Revolutionize Your Business with AI Automation".
+Subheading: "Custom AI solutions to enhance your customer support and interactions."
+Call to Action: Button saying "Explore Features" that leads to the Features section.
+2. Services Section:
+
+Section Title: "Our Services"
+Include three service blocks with a brief description of each service:
+AI Chatbots: "Automate customer support with tailored AI chatbots that integrate with your CRM tools."
+Lead Generation: "Effortlessly capture and verify leads with our automated LinkedIn email scraping and outreach tools."
+Custom AI Solutions: "Create fully customized AI solutions to suit your business needs, from chatbot interactions to email campaigns."
+Under each service, display a "Learn More" button that links to a detailed page.
+3. Service Detail Pages:
+
+Page 1: AI Chatbots:
+Text: "Our AI chatbots help businesses automate customer support, offering personalized interactions and 24/7 availability. They integrate seamlessly with CRM tools to enhance customer experience and increase efficiency. With both LLM-based and rule-based AI capabilities, these chatbots can be customized to suit your specific needs."
+Form: Include fields for Name, Email, and Message, which will be sent to your email upon submission.
+Page 2: Lead Generation:
+Text: "Our lead generation tool automates the process of scraping emails from LinkedIn, verifying them, and automating outreach. This saves time and boosts efficiency, allowing you to reach out to potential clients with ease. We ensure that the emails are verified before being used in outreach campaigns."
+Form: Same as above (Name, Email, and Message fields).
+Page 3: Custom AI Solutions:
+Text: "Our custom AI solutions are designed to meet the specific needs of your business. Whether it’s creating a tailored chatbot or setting up a personalized email outreach campaign, we provide comprehensive solutions to help you succeed in the digital space."
+Form: Same as above (Name, Email, and Message fields).
+4. Contact Page:
+
+Simple contact form with fields for name, email, and message.
+Include company contact information and an additional form for user inquiries.
