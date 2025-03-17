@@ -16,7 +16,7 @@ export default function Home() {
           fill="white"
         />
 
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center relative z-10 py-16">
+        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 lg:gap-12 items-center relative z-10 py-8 md:py-16">
           <div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
               Revolutionize Your Business with AI Automation
@@ -31,10 +31,16 @@ export default function Home() {
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button size="lg" variant="outline" className="border-neutral-700 hover:bg-neutral-800">
+                <Button size="lg" variant="outline" className="border-neutral-700 hover:bg-neutral-800 group">
                   Schedule Demo
+                  <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                 </Button>
               </Link>
+              <div className="fixed bottom-4 right-4 z-50">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 shadow-lg">
+                  Chat with Us
+                </Button>
+              </div>
             </div>
           </div>
           <div className="h-[400px] relative">
