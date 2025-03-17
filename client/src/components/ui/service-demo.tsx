@@ -34,7 +34,7 @@ export function ServiceDemo({ title, description, scene, className }: ServiceDem
         <div className="flex-1 relative min-h-[250px] md:min-h-0">
           <SplineScene 
             scene={scene}
-            className="w-full h-full"
+            className="w-full h-full md:h-[600px] lg:h-[700px]" // Added responsive height classes
           />
         </div>
       </div>
