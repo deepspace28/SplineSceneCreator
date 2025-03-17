@@ -37,7 +37,6 @@ export default function Home() {
                   <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                 </Button>
               </Link>
-              <ChatDialog />
             </div>
           </div>
           <div className="h-[400px] relative">
