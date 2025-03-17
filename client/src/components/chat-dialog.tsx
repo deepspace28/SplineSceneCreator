@@ -39,19 +39,19 @@ export function ChatDialog() {
     <>
       <Button 
         size="lg" 
-        className="fixed bottom-4 right-4 z-50 bg-primary hover:bg-primary/90 shadow-lg"
+        className="fixed bottom-4 right-4 z-50 bg-primary hover:bg-primary/90 shadow-lg md:px-6 px-4 md:py-3 py-2 text-sm md:text-base rounded-full"
         onClick={() => setOpen(true)}
       >
         Chat with Us
       </Button>
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-[425px] w-[95%] mx-auto p-4 sm:p-6 rounded-xl">
           <DialogHeader>
             <DialogTitle>Chat Support</DialogTitle>
           </DialogHeader>
           {!isSubmitted ? (
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3 md:space-y-4">
                 <FormField
                   control={form.control}
                   name="name"
@@ -59,7 +59,7 @@ export function ChatDialog() {
                     <FormItem>
                       <FormLabel>Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="Your name" {...field} />
+                        <Input placeholder="Your name" className="h-10 md:h-11 text-base" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -72,7 +72,7 @@ export function ChatDialog() {
                     <FormItem>
                       <FormLabel>Email</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="your@email.com" {...field} />
+                        <Input type="email" placeholder="your@email.com" className="h-10 md:h-11 text-base" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -87,7 +87,7 @@ export function ChatDialog() {
                       <FormControl>
                         <Textarea 
                           placeholder="Please describe your issue..."
-                          className="resize-none"
+                          className="resize-none min-h-[100px] text-base"
                           {...field}
                         />
                       </FormControl>
