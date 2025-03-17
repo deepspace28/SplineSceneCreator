@@ -13,7 +13,7 @@ interface ServiceDemoProps {
 
 export function ServiceDemo({ title, description, scene, className }: ServiceDemoProps) {
   return (
-    <Card className="w-full h-[500px] bg-black/[0.96] relative overflow-hidden">
+    <Card className="w-full h-[500px] bg-black/[0.96] relative overflow-hidden border border-neutral-800 shadow-xl transition-all hover:border-neutral-700">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"

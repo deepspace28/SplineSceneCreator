@@ -16,7 +16,7 @@ export default function Home() {
           fill="white"
         />
 
-        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center relative z-10">
+        <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center relative z-10 py-16">
           <div>
             <h1 className="text-4xl md:text-6xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
               Revolutionize Your Business with AI Automation
