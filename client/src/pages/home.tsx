@@ -5,6 +5,7 @@ import { GlareCard } from "@/components/ui/glare-card";
 import ServiceCard from "@/components/service-card";
 import { Bot, Users, Zap, Star, CheckCircle, BarChart, Brain, Shield } from "lucide-react";
 import { Link } from "wouter";
+import { ChatDialog } from "@/components/chat-dialog";
 
 export default function Home() {
   return (
@@ -36,11 +37,7 @@ export default function Home() {
                   <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                 </Button>
               </Link>
-              <div className="fixed bottom-4 right-4 z-50">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 shadow-lg">
-                  Chat with Us
-                </Button>
-              </div>
+              <ChatDialog />
             </div>
           </div>
           <div className="h-[400px] relative">
