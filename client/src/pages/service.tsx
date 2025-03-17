@@ -74,7 +74,7 @@ export default function Service() {
 
         {/* Service Header */}
         <div className="flex items-center gap-4 mb-8">
-          {Icon && <Icon className="w-10 h-10 text-primary" />}
+          {Icon && <Icon className="w-10 h-10 text-primary/90 filter drop-shadow-md" strokeWidth={1.5} />}
           <h1 className="text-4xl font-bold text-neutral-50">{service.title}</h1>
         </div>
 
